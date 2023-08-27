@@ -1,0 +1,21 @@
+
+Enter number of row m =  
+Enter number of column n =  
+Enter the element for row : 1 column : 1 : 
+Enter the element for row : 1 column : 2 : 
+Enter the element for row : 1 column : 3 : 
+Enter the element for row : 2 column : 1 : 
+Enter the element for row : 2 column : 2 : 
+Enter the element for row : 2 column : 3 : 
+Enter the element for row : 3 column : 1 : 
+Enter the element for row : 3 column : 2 : 
+Enter the element for row : 3 column : 3 : Your Matrix : 
+1	0	0	
+0	2	0	
+3	0	0	
+Sparac Matrix
+Row     |     Column     |     Value
+--------------------------------------
+   1		1		1
+   2		2		2
+   3		1		3
