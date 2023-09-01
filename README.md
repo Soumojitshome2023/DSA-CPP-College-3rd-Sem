@@ -31,4 +31,6 @@
 * Sparse Matrix
 * File Read Write
 
-### 7. 1 Sep 2023 Day 7 :
+### 7. 1 Sep 2023 Day 7 : Infix to postfix
+
+* infix to postfix
