@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string.h>
-// Sparac Matrix
+// Sparse Matrix
 
 using namespace std;
 
