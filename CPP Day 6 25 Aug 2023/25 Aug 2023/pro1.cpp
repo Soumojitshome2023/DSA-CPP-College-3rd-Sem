@@ -35,7 +35,7 @@ int main()
 
 	if (no_of_zero > ((m * n) / 2))
 	{
-		cout << "Sparac Matrix";
+		cout << "sparse Matrix";
 
 		cout << "\nRow     |     Column     |     Value";
 		cout << "\n--------------------------------------";
@@ -72,7 +72,7 @@ int main()
 	*/
 	}
 	else
-		cout << "Not a Sparac Matrix";
+		cout << "Not a sparse Matrix";
 
 	return 0;
 }

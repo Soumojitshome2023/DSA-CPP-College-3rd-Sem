@@ -13,7 +13,7 @@ Enter the element for row : 3 column : 3 : Your Matrix :
 1	0	0	
 0	2	0	
 3	0	0	
-Sparac Matrix
+sparse Matrix
 Row     |     Column     |     Value
 --------------------------------------
    1		1		1

@@ -26,7 +26,7 @@
 * Circular Queue Without Class
 * Circular Queue Using Class
 
-### 6. 25 Aug 2023 Day 6 : Sparac Matrix
+### 6. 25 Aug 2023 Day 6 : Sparse Matrix
 
 * Sparse Matrix
 * File Read Write
