@@ -34,3 +34,4 @@
 ### 7. 1 Sep 2023 Day 7 : Infix to postfix
 
 * infix to postfix
+* infix to prefix
