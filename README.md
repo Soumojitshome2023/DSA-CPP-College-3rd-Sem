@@ -35,3 +35,4 @@
 
 * infix to postfix
 * infix to prefix
+* postfix to infix
