@@ -39,4 +39,7 @@ Maintained by [Soumojit Shome](https://iamsoumojit.vercel.app/)
 * Infix to Prefix
 * Postfix to Infix
 
-### 8. 8 Sep 2023 Day 8 :
+### 8. 8 Sep 2023 Day 8 : Postfix Evaluation
+
+* Postfix Evaluation
+* Singly Linked List
