@@ -1,5 +1,7 @@
 ![MasterHead](https://bestanimations.com/media/sky/1088683783milky-way-night-sky-gif.gif)
 
+Maintained by [Soumojit Shome](https://iamsoumojit.vercel.app/)
+
 ### 1. 21 July 2023 Day 1 : Basic CPP
 
 * Array Input Output
@@ -22,7 +24,7 @@
 
 ### 5. 18 Aug 2023 Day 5 : Circular Queue
 
-* decimal to binary converter
+* Decimal to Binary Converter
 * Circular Queue Without Class
 * Circular Queue Using Class
 
@@ -31,8 +33,13 @@
 * Sparse Matrix
 * File Read Write
 
-### 7. 1 Sep 2023 Day 7 : Infix to postfix
+### 7. 1 Sep 2023 Day 7 : Infix Postfix Prefix
 
-* infix to postfix
-* infix to prefix
-* postfix to infix
+* Infix to Postfix
+* Infix to Prefix
+* Postfix to Infix
+
+### 8. 8 Sep 2023 Day 8 : Postfix Evaluation
+
+* Postfix Evaluation
+* Singly Linked List
