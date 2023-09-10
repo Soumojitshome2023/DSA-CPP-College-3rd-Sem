@@ -38,7 +38,7 @@ Maintained by [Soumojit Shome](https://iamsoumojit.vercel.app/)
 * Infix to Postfix
 * Infix to Prefix
 * Postfix to Infix
-* prefix to infix
+* Prefix to Infix
 
 ### 8. 8 Sep 2023 Day 8 : Postfix Evaluation
 
