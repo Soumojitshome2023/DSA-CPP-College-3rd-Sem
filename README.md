@@ -27,6 +27,7 @@ Maintained by [Soumojit Shome](https://iamsoumojit.vercel.app/)
 * Decimal to Binary Converter
 * Circular Queue Without Class
 * Circular Queue Using Class
+* Creating Your Own Header File
 
 ### 6. 25 Aug 2023 Day 6 : Sparse Matrix
 
