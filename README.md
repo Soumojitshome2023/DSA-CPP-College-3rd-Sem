@@ -15,7 +15,9 @@ Maintained by [Soumojit Shome](https://iamsoumojit.vercel.app/)
 * Stack | Push, Pop, Display
 * Stack | Class | Push, Pop, Display
 
-### 3. 4 Aug 2023 Day 3 :
+### 3. 4 Aug 2023 Day 3 : Copying Elements Between Stacks
+
+* Stack Copy Program | Copying Elements Between Stacks
 
 ### 4. 11 Aug 2023 Day 4 : Queue
 
