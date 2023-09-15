@@ -47,3 +47,7 @@ Maintained by [Soumojit Shome](https://iamsoumojit.vercel.app/)
 
 * Postfix Evaluation
 * Singly Linked List
+
+### 9. 15 Sep 2023 Day 9 : Linked List
+
+* Linked List
