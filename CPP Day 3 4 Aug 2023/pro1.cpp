@@ -6,7 +6,7 @@ using namespace std;
 
 int stack_s[max], stack_p[max], stack_q[max], top_s = -1, top_p = -1, top_q = -1;
 
-//======================================== Push function ========================================
+//=============================== Push function ===============================
 int push(int val, int stack_name[], int *top_name) {
     if (*top_name >= max - 1)
         cout << "Overflow";
@@ -14,7 +14,7 @@ int push(int val, int stack_name[], int *top_name) {
         stack_name[++(*top_name)] = val;
 }
 
-//======================================== Pop function ========================================
+//================================= Pop function =================================
 int pop(int stack_name[], int *top_name) {
     if (*top_name <= -1)
         cout << "Underflow";
@@ -24,7 +24,7 @@ int pop(int stack_name[], int *top_name) {
     }
 }
 
-//=========================== Display function for a specific stack ===========================
+//===================== Display function for a specific stack =====================
 int display(int top_name, int stack_name[], const char* stack_name_str) {
     int i;
     if (top_name >= 0) {
@@ -35,7 +35,7 @@ int display(int top_name, int stack_name[], const char* stack_name_str) {
         cout << stack_name_str << " is empty";
 }
 
-//======================================== Copy function ========================================
+//================================ Copy function ================================
 int copy(int xnum, int stack_no) {
     int i;
     if (stack_no == 1) {
@@ -120,4 +120,4 @@ int main() {
 }
 
 
-// ==================================================================================================
+// =====================================================================================
