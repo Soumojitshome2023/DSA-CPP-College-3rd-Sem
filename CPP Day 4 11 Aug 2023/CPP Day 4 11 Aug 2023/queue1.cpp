@@ -60,8 +60,6 @@ int main(){
 		cin>>ch;
 		switch(ch){
 			case 1:
-				//cout<<"Enter the value to be inserted : ";
-				//cin>>val;
 				enqueue();
 				break;
 			case 2: 

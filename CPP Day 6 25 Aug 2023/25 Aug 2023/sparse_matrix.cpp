@@ -33,7 +33,7 @@ int main()
 		cout << endl;
 	}
 
-	if (no_of_zero > ((m * n) / 2))
+	if (no_of_zero >= ((m * n * 2) / 3))
 	{
 		cout << "sparse Matrix";
 
@@ -51,25 +51,6 @@ int main()
 			}
 		}
 		cout << endl;
-		/*
-		cout<<"\nColumn : ";
-		for(i=0; i<m; i++){
-			for(j=0; j<n; j++){
-				if(matrix[i][j] != 0){
-					cout<<j+1<<" ";
-				}
-			}
-		}
-		cout<<"\nValue  : ";
-		for(i=0; i<m; i++){
-			for(j=0; j<n; j++){
-				if(matrix[i][j] != 0){
-					cout<<matrix[i][j]<<" ";
-				}
-			}
-		}
-
-	*/
 	}
 	else
 		cout << "Not a sparse Matrix";
