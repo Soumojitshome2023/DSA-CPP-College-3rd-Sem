@@ -7,6 +7,7 @@ struct Node {
     Node* next;
 };
 
+// ============================= Create Node =============================
 Node* createNode(int data) {
     Node* newNode = new Node;
     newNode->data = data;
@@ -14,12 +15,14 @@ Node* createNode(int data) {
     return newNode;
 }
 
+// ============================= Insert At Beginning ============================= 
 Node* insertAtBeginning(Node* head, int data) {
     Node* newNode = createNode(data);
     newNode->next = head;
     return newNode;
 }
 
+// ============================= Insert At End =============================
 Node* insertAtEnd(Node* head, int data) {
     Node* newNode = createNode(data);
     if (head == nullptr) {
@@ -33,6 +36,7 @@ Node* insertAtEnd(Node* head, int data) {
     return head;
 }
 
+// ============================= Insert At Index =============================
 Node* insertAtIndex(Node* head, int data, int index) {
     if (index < 0) {
         cout << "Invalid index. Please enter a non-negative index." << endl;
@@ -43,6 +47,26 @@ Node* insertAtIndex(Node* head, int data, int index) {
         return insertAtBeginning(head, data);
     }
 
+/*  0   1   2   3     4   5   6   
+                   ^
+    let index =  4
+
+    currentIndex < 3 , (4-1)
+    current = head address (address of 0th node) 
+    currentIndex = 0
+
+    loop start =>
+    step 1 : current  = address of 1st node, currentIndex = 1
+    step 2 : current  = address of 2nd node, currentIndex = 2
+    step 3 : current  = address of 3rd node, currentIndex = 3
+
+    loop end
+    (so now current = address of 3rd node)
+
+    newNode->next  = current->next(address of 4th node)
+    current->next(address of 4th node) =  addres of new node
+
+*/
     Node* newNode = createNode(data);
     Node* current = head;
     int currentIndex = 0;
@@ -61,6 +85,7 @@ Node* insertAtIndex(Node* head, int data, int index) {
     return head;
 }
 
+// ============================= Delete Front =============================
 Node* deleteFront(Node* head) {
     if (head == nullptr) {
         cout << "List is empty. Cannot delete from the front." << endl;
@@ -72,6 +97,8 @@ Node* deleteFront(Node* head) {
     return temp;
 }
 
+
+// ============================= Delete End =============================
 Node* deleteEnd(Node* head) {
     if (head == nullptr) {
         cout << "List is empty. Cannot delete from the end." << endl;
@@ -92,6 +119,8 @@ Node* deleteEnd(Node* head) {
     return head;
 }
 
+
+// ============================= Delete Middle =============================
 Node* deleteMiddle(Node* head) {
     if (head == nullptr) {
         cout << "List is empty. Cannot delete from the middle." << endl;
@@ -123,6 +152,8 @@ Node* deleteMiddle(Node* head) {
     return head;
 }
 
+
+// ============================= Find Length =============================
 int findLength(Node* head) {
     int length = 0;
     Node* current = head;
@@ -133,6 +164,8 @@ int findLength(Node* head) {
     return length;
 }
 
+
+// ============================= Search =============================
 bool searchValue(Node* head, int data) {
     Node* current = head;
     while (current != nullptr) {
@@ -144,6 +177,8 @@ bool searchValue(Node* head, int data) {
     return false;
 }
 
+
+// ============================= Display =============================
 void display(Node* head) {
     Node* current = head;
     while (current != nullptr) {
@@ -153,6 +188,7 @@ void display(Node* head) {
     cout << endl;
 }
 
+// ============================= Main Function =============================
 int main() {
     Node* head = nullptr;
     int choice, data, index;
@@ -235,3 +271,4 @@ int main() {
 
     return 0;
 }
+// ======================================================================

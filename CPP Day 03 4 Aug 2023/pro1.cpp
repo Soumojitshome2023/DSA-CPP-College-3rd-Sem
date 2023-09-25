@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cstdlib>
 
+// Copying Elements Between Stacks
+
 using namespace std;
 #define max 10
 

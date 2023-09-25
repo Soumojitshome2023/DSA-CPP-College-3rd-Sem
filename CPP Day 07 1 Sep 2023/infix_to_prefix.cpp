@@ -5,11 +5,12 @@
 #define SIZE 100
 using namespace std;
 
-// infix to prefixs
+// Infix to Prefix
 
 char stack[SIZE];
 int top = -1;
 
+// ============================= Push =============================
 void push(char item) {
     if (top >= SIZE - 1)
         cout << "Stack overflow" << endl;
@@ -19,6 +20,7 @@ void push(char item) {
     }
 }
 
+// ============================= Pop =============================
 char pop() {
     char item;
     if (top < 0) {
@@ -31,6 +33,7 @@ char pop() {
     }
 }
 
+// ============================= Is Operator =============================
 int isoperator(char symbol) {
     if (symbol == '^' || symbol == '*' || symbol == '/' || symbol == '+' || symbol == '-')
         return 1;
@@ -38,6 +41,7 @@ int isoperator(char symbol) {
         return 0;
 }
 
+// ============================= Precedence =============================
 int precedence(char symbol) {
     if (symbol == '^')
         return 3;
@@ -49,6 +53,7 @@ int precedence(char symbol) {
         return 0;
 }
 
+// ============================= String Reverse =============================
 void reverseString(char str[]) {
     int length = strlen(str);
     for (int i = 0, j = length - 1; i < j; i++, j--) {
@@ -58,6 +63,7 @@ void reverseString(char str[]) {
     }
 }
 
+// ============================= Infix to Prefix Function =============================
 void infixToPrefix(char infix_exp[], char prefix_exp[]) {
     int i, j;
     char x, item;
@@ -104,6 +110,10 @@ void infixToPrefix(char infix_exp[], char prefix_exp[]) {
     reverseString(prefix_exp);
 }
 
+// ==================================================================================
+
+
+// ============================= Input Valid or Not =============================
 bool isValidInput(char infix_exp[]) {
     if (isoperator(infix_exp[0]) || isoperator(infix_exp[strlen(infix_exp) - 1]))
         return false;
@@ -116,6 +126,7 @@ bool isValidInput(char infix_exp[]) {
     return true;
 }
 
+// ============================= Main Function =============================
 int main() {
     char infix[SIZE], prefix[SIZE];
     int i;
@@ -131,3 +142,5 @@ int main() {
     cout <<"Prefix expression : "<< prefix << endl;
     return 0;
 }
+
+// ==================================================================================

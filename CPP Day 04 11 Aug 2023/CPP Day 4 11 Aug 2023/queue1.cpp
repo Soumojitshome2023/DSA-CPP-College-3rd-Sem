@@ -8,6 +8,7 @@ using namespace std;
 
 int queue[max], rear = -1, front = -1;
 
+// ============================= EnQueue =============================
 void enqueue(){
 	int val;
 	if(rear >= max-1)
@@ -24,6 +25,8 @@ void enqueue(){
 	}
 
 }
+
+// ============================= DeQueue =============================
 void dequeue(){
 	if(front == -1 || front > rear)
 		cout<<"Underflow"<<endl;
@@ -33,6 +36,8 @@ void dequeue(){
 	
 	}
 }
+
+// ============================= Display =============================
 void display(){
 		int i;
 		if(front == -1 || front > rear)
@@ -46,7 +51,7 @@ void display(){
 		}
 }
 
-
+// ============================= Main Function =============================
 int main(){
 	int ch;
 

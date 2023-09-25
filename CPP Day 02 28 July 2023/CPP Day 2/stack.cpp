@@ -8,6 +8,7 @@ using namespace std;
 #define max 10
 int stack[max], top = -1;
 
+// ============================= Push =============================
 int push(int val){
 	if(top >= max-1){
 		cout<<"Overflow";
@@ -16,6 +17,7 @@ int push(int val){
 		stack[++top] = val;
 }
 
+// ============================= Pop =============================
 int pop(){
 	if(top <= -1)
 		cout<<"Underflow";
@@ -25,6 +27,7 @@ int pop(){
 	}
 }
 
+// ============================= Display =============================
 int display(){
 	int i;
 		if(top >=0){
@@ -36,6 +39,7 @@ int display(){
 			cout<<"Stack is empty";
 }
 
+// ============================= Main Function =============================
 int main(){
 	int ch, val;
 
@@ -70,18 +74,4 @@ int main(){
 
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ==================================================================================

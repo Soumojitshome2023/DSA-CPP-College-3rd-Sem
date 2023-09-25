@@ -10,6 +10,7 @@ using namespace std;
 char stack[SIZE];
 int top = -1;
 
+// ============================= Push =============================
 void push(char item)
 {
     if (top >= SIZE - 1)
@@ -21,6 +22,7 @@ void push(char item)
     }
 }
 
+// ============================= Pop =============================
 char pop()
 {
     char item;
@@ -37,6 +39,7 @@ char pop()
     }
 }
 
+// ============================= Is Operator =============================
 int isoperator(char symbol)
 {
     if (symbol == '^' || symbol == '*' || symbol == '/' || symbol == '+' || symbol == '-')
@@ -45,6 +48,7 @@ int isoperator(char symbol)
         return 0;
 }
 
+// ============================= Precedence =============================
 int precedence(char symbol)
 {
     if (symbol == '^')
@@ -57,6 +61,7 @@ int precedence(char symbol)
         return 0;
 }
 
+// ============================= Infix to Postfix Function =============================
 void inf_pos(char infix_exp[], char postfix_exp[])
 {
     int i, j;
@@ -112,7 +117,11 @@ void inf_pos(char infix_exp[], char postfix_exp[])
     }
     postfix_exp[j] = '\0';
 }
+// ==================================================================================
 
+
+
+// ============================= Input Valid or Not =============================
 bool isValidInput(char infix_exp[])
 {
     if (isoperator(infix_exp[0]) || isoperator(infix_exp[strlen(infix_exp) - 1]))
@@ -128,6 +137,8 @@ bool isValidInput(char infix_exp[])
     return true;
 }
 
+
+// ============================= Main Function =============================
 int main()
 {
     char infix[SIZE], postfix[SIZE];
@@ -145,3 +156,5 @@ int main()
     cout << "Postfix expression : " << postfix << endl;
     return 0;
 }
+
+// ===============================================================================

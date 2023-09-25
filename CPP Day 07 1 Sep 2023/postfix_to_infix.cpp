@@ -2,6 +2,9 @@
 #include<string>
 #define sizes 100
 using namespace std;
+
+// Postfix to Infix 
+
 class stack
 {
     string item[100];

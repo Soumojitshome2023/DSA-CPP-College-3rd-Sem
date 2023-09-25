@@ -6,6 +6,8 @@ using namespace std;
 #define max 10
 
 int cq[max], front = -1, rear = -1;
+
+// ============================= EnQueue =============================
 void enqueue(){
 	int val;
 	if((front == 0 && rear == max-1)||(front == rear+1 )){
@@ -29,6 +31,7 @@ void enqueue(){
 	}
 }
 
+// ============================= DeQueue =============================
 void dequeue(){
 	if(front == -1){
 		cout<<"Queue Underflow";
@@ -50,6 +53,7 @@ void dequeue(){
 	}
 }
 
+// ============================= Display =============================
 void display(){
 	int i;
 	if(front == -1)
@@ -74,6 +78,8 @@ void display(){
 		}
 	}
 }
+
+// ============================= Main =============================
 int main(){
 	int ch;
 
