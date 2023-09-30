@@ -1,6 +1,6 @@
 ![MasterHead](https://bestanimations.com/media/sky/1088683783milky-way-night-sky-gif.gif)
 
-Maintained by [Soumojit Shome](https://iamsoumojit.vercel.app/)
+Maintained by [Soumojit Shome](https://soumojitshome.vercel.app)
 
 ### 1. [21 July 2023 Day 1 : Basic CPP](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2001%2021%20July%202023/CPP%20Day%201)
 
@@ -48,7 +48,7 @@ Maintained by [Soumojit Shome](https://iamsoumojit.vercel.app/)
 * Postfix Evaluation
 * Singly Linked List
 
-### 9. [15 Sep 2023 Day 9 : Linked List](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2008%208%20Sep%202023)
+### 9. [15 Sep 2023 Day 9 : Linked List](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2009%2015%20Sep%202023)
 
 * Singly Linked List
 
