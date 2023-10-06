@@ -56,10 +56,10 @@ Maintained by [Soumojit Shome](https://soumojitshome.vercel.app)
 
 * Circular Singly Linked List
 
-### 11. [6 Oct 2023 Day 11 : Sorting](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2010%2022%20Sep%202023)
+### 11. [6 Oct 2023 Day 11 : Sorting](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2011%206%20Oct%202023)
 
-> * Bubble Sort
-> * Insertion Sort
-> * Selection Sort
-> * Quick Sort
-> * Merge Sort
+* Bubble Sort
+* Insertion Sort
+* Selection Sort
+* Quick Sort
+* Merge Sort
