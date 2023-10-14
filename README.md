@@ -63,3 +63,8 @@ Maintained by [Soumojit Shome](https://soumojitshome.vercel.app)
 * Selection Sort
 * Quick Sort
 * Merge Sort
+* Heap Sort
+
+### 12. [13 Oct 2023 Day 12 : Implement a stack using singly linked list](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2012%2013%20Oct%202023)
+
+* Implement a stack using singly linked list
