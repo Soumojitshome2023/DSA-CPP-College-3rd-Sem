@@ -2,7 +2,7 @@
 
 Maintained by [Soumojit Shome](https://soumojitshome.vercel.app)
 
-### 1. [21 July 2023 Day 1 : Basic CPP](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2001%2021%20July%202023/CPP%20Day%201)
+### 1. [21 July 2023 Day 1 : Basic CPP](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2001%2021%20July%202023)
 
 * Array Input Output
 * Max Min
@@ -10,7 +10,7 @@ Maintained by [Soumojit Shome](https://soumojitshome.vercel.app)
 * Linear Search Without Function
 * Linear Search With Function
 
-### 2. [28 July 2023 Day 2 : Stack](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2002%2028%20July%202023/CPP%20Day%202)
+### 2. [28 July 2023 Day 2 : Stack](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2002%2028%20July%202023)
 
 * Stack | Push, Pop, Display
 * Stack | Class | Push, Pop, Display
@@ -19,19 +19,19 @@ Maintained by [Soumojit Shome](https://soumojitshome.vercel.app)
 
 * Stack Copy Program | Copying Elements Between Stacks
 
-### 4. [11 Aug 2023 Day 4 : Queue](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2004%2011%20Aug%202023/CPP%20Day%204%2011%20Aug%202023)
+### 4. [11 Aug 2023 Day 4 : Queue](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2004%2011%20Aug%202023)
 
 * Queue Without Class
 * Queue With Class
 
-### 5. [18 Aug 2023 Day 5 : Circular Queue](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2005%2018%20Aug%202023/18%20aug%202023)
+### 5. [18 Aug 2023 Day 5 : Circular Queue](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2005%2018%20Aug%202023)
 
 * Decimal to Binary Converter
 * Circular Queue Without Class
 * Circular Queue Using Class
 * Creating Your Own Header File
 
-### 6. [25 Aug 2023 Day 6 : Sparse Matrix](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2006%2025%20Aug%202023/25%20Aug%202023)
+### 6. [25 Aug 2023 Day 6 : Sparse Matrix](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2006%2025%20Aug%202023)
 
 * Sparse Matrix
 * File Read Write
