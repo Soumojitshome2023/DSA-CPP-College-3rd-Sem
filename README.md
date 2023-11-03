@@ -68,3 +68,7 @@ Maintained by [Soumojit Shome](https://soumojitshome.vercel.app)
 ### 12. [13 Oct 2023 Day 12 : Implement a stack using singly linked list](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2012%2013%20Oct%202023)
 
 * Implement a stack using singly linked list
+
+### 13. [3 Nov 2023 Day 13 : Implement a stack and Queue using singly linked list Using Class](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2013%203%20Nov%202023)
+
+* Implement a Stack and Queue using singly linked list and Using Class
