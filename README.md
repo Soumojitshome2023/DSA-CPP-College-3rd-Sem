@@ -2,6 +2,41 @@
 
 Maintained by [Soumojit Shome](https://soumojitshome.vercel.app)
 
+## **Command :**
+
+Create a Directory : 
+```
+mkdir directory_name
+```
+
+Create File : 
+```
+pluma fileName
+```
+
+Change Directory :
+```
+cd /path/to/directory
+```
+
+Compile C++ :
+```
+g++ fileName.cpp
+```
+
+Run : 
+```
+./a.out
+``` 
+or 
+```
+./a.exe
+```
+
+---
+
+## DSA C++ College 3rd Sem :
+
 ### 1. [21 July 2023 Day 1 : Basic CPP](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2001%2021%20July%202023)
 
 * Array Input Output
@@ -77,10 +112,13 @@ Maintained by [Soumojit Shome](https://soumojitshome.vercel.app)
 
 * Doubly Linked List
 
-
 ### 15. [17 Nov 2023 Day 15 : Tree](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2015%2017%20Nov%202023)
 
 * Linked Representation
 * PreOrder Traversal
 * PostOrder Traversal
 * InOrder Traversal
+
+### 16. [24 Nov 2023 Day 16 : Binary Tree Input Element](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2016%2024%20Nov%202023)
+
+* Binary Tree Input Element

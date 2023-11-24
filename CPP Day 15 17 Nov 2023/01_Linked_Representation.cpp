@@ -1,5 +1,6 @@
-#include<stdio.h>
-#include<malloc.h>
+#include <iostream>
+using namespace std;
+#include <malloc.h>
 
 struct node{
     int data;
