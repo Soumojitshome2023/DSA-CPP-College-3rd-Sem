@@ -1,9 +1,8 @@
 ![MasterHead](https://bestanimations.com/media/sky/1088683783milky-way-night-sky-gif.gif)
 
-<!-- <div align="center">
+<div align="center">
  <h1> DSA C++ College 3rd Sem </h1>
-<img src="./Others/milky-way-night-sky-gif.gif" alt="png" align="center" style="width: 80%;" />
-</div> -->
+</div>
 
 Maintained by [Soumojit Shome](https://soumojitshome.vercel.app)
 
