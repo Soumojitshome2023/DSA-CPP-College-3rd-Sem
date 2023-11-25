@@ -1,34 +1,47 @@
-![MasterHead](https://bestanimations.com/media/sky/1088683783milky-way-night-sky-gif.gif)
+
+<!-- ![MasterHead](https://bestanimations.com/media/sky/1088683783milky-way-night-sky-gif.gif) -->
+
+<div align="center">
+ <h1> DSA C++ College 3rd Sem </h1>
+<img src="./Others/milky-way-night-sky-gif.gif" alt="png" align="center" style="width: 80%;" />
+</div>
 
 Maintained by [Soumojit Shome](https://soumojitshome.vercel.app)
 
 ## **Command :**
 
-Create a Directory : 
+Create a Directory :
+
 ```
 mkdir directory_name
 ```
 
-Create File : 
+Create File :
+
 ```
 pluma fileName
 ```
 
 Change Directory :
+
 ```
 cd /path/to/directory
 ```
 
 Compile C++ :
+
 ```
 g++ fileName.cpp
 ```
 
-Run : 
+Run :
+
 ```
 ./a.out
-``` 
-or 
+```
+
+or
+
 ```
 ./a.exe
 ```
@@ -122,3 +135,16 @@ or
 ### 16. [24 Nov 2023 Day 16 : Binary Tree Input Element](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2016%2024%20Nov%202023)
 
 * Binary Tree Input Element
+
+### [TCS CodeVita 24 Nov 2023](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CodeVita%2024%20Nov%202023)
+
+* A. Sort And Reflect (Accepted)
+* B. Zero Count (Accepted)
+* C. String From Rank
+* D. Online Shopping
+* E. SuperMarket (Accepted)
+* F. Harmonic Homology
+* Others Problem :
+  * Best Bubble
+
+---

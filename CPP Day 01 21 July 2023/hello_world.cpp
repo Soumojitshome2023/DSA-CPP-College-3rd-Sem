@@ -1,12 +1,12 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 // First Code
 
-int main(){
+int main()
+{
 
-	cout<<"Hello World";
-
+	cout << "Hello World";
 
 	return 0;
 }

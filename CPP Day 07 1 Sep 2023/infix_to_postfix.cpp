@@ -119,8 +119,6 @@ void inf_pos(char infix_exp[], char postfix_exp[])
 }
 // ==================================================================================
 
-
-
 // ============================= Input Valid or Not =============================
 bool isValidInput(char infix_exp[])
 {
@@ -136,7 +134,6 @@ bool isValidInput(char infix_exp[])
     }
     return true;
 }
-
 
 // ============================= Main Function =============================
 int main()
