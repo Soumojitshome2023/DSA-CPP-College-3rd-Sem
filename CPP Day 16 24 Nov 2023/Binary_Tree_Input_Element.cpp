@@ -9,6 +9,7 @@ struct node
     struct node *right;
 };
 
+// ========================== Create Node ==========================
 struct node *createNode(int data)
 {
     struct node *n;
@@ -19,6 +20,7 @@ struct node *createNode(int data)
     return n;
 }
 
+// ========================== Insert Data ==========================
 struct node *insert(struct node *root, int data)
 {
     if (root == NULL)
@@ -38,6 +40,7 @@ struct node *insert(struct node *root, int data)
     return root;
 }
 
+// ========================== Pre Order ==========================
 void preOrder(struct node *root)
 {
     if (root != NULL)
@@ -48,6 +51,7 @@ void preOrder(struct node *root)
     }
 }
 
+// ========================== In Order ==========================
 void inOrder(struct node *root)
 {
     if (root != NULL)
@@ -58,6 +62,7 @@ void inOrder(struct node *root)
     }
 }
 
+// ========================== Post Order ==========================
 void postOrder(struct node *root)
 {
     if (root != NULL)

@@ -61,7 +61,7 @@ int precedence(char symbol)
         return 0;
 }
 
-// ============================= Infix to Postfix Function =============================
+// ==================== Infix to Postfix Function ====================
 void inf_pos(char infix_exp[], char postfix_exp[])
 {
     int i, j;

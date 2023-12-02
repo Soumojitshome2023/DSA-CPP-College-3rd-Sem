@@ -1,11 +1,14 @@
 #include <iostream>
 using namespace std;
+
 struct Node
 {
     int data;
     struct Node *next;
 };
 struct Node *top = NULL;
+
+// ============================ Push ============================
 void push(int val)
 {
     struct Node *newnode = (struct Node *)malloc(sizeof(struct Node));
@@ -13,6 +16,8 @@ void push(int val)
     newnode->next = top;
     top = newnode;
 }
+
+// ============================ Pop ============================
 void pop()
 {
     if (top == NULL)
@@ -23,6 +28,8 @@ void pop()
         top = top->next;
     }
 }
+
+// ============================ Display ============================
 void display()
 {
     struct Node *ptr;

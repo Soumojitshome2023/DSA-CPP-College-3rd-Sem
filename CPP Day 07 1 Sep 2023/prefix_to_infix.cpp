@@ -13,7 +13,7 @@ bool isOperand(char c)
     }
 }
 
-// ============================= Prefix to Infix Function =============================
+// ==================== Prefix to Infix Function ====================
 string PrefixToInfix(string prefix)
 {
     stack<string> s;

@@ -4,9 +4,9 @@
  <h1> DSA C++ College 3rd Sem </h1>
 </div>
 
-Maintained by [Soumojit Shome](https://soumojitshome.vercel.app)
+###### Maintained by [Soumojit Shome](https://soumojitshome.vercel.app)
 
-## **Command :**
+## **Commands :**
 
 Create a Directory :
 
@@ -46,7 +46,7 @@ or
 
 ---
 
-## DSA C++ College 3rd Sem :
+## Day Wise DSA Lab Program :
 
 ### 1. [21 July 2023 Day 1 : Basic CPP](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2001%2021%20July%202023)
 
@@ -55,6 +55,12 @@ or
 * Insert New Element in an Array
 * Linear Search Without Function
 * Linear Search With Function
+* Binary Search
+
+| Search<br />Name | Best Time<br />Complexity | Average Time<br />Complexity | Worst Time<br />Complexity | Worst Space<br />Complexity |
+| :--------------: | :-----------------------: | :---------------------------: | :-------------------------: | :-------------------------: |
+|      Linear      |           O(1)           |             O(n)             |            O(n)            |            O(1)            |
+|      Binary      |           O(1)           |           O(log n)           |          O(log n)          |            O(1)            |
 
 ### 2. [28 July 2023 Day 2 : Stack](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2002%2028%20July%202023)
 
@@ -110,6 +116,15 @@ or
 * Quick Sort
 * Merge Sort
 * Heap Sort
+
+| Sort<br />Name | Best Time<br />Complexity | Average Time<br />Complexity | Worst Time<br />Complexity | Worst Space<br />Complexity | Stable |
+| :------------: | :-----------------------: | :---------------------------: | :-------------------------: | :-------------------------: | :----: |
+|     Bubble     |           O(n)           |            O(n^2)            |           O(n^2)           |            O(1)            |  Yes  |
+|   Insertion   |           O(n)           |            O(n^2)            |           O(n^2)           |            O(1)            |  Yes  |
+|   Selection   |          O(n^2)          |            O(n^2)            |           O(n^2)           |            O(1)            |        |
+|     Quick     |         O(nlogn)         |           O(nlogn)           |           O(n^2)           |           O(logn)           |        |
+|     Merge     |         O(nlogn)         |           O(nlogn)           |          O(nlogn)          |            O(n)            |  Yes  |
+|      Heap      |         O(nlogn)         |           O(nlogn)           |          O(nlogn)          |            O(n)            |        |
 
 ### 12. [13 Oct 2023 Day 12 : Implement a stack using singly linked list](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2012%2013%20Oct%202023)
 

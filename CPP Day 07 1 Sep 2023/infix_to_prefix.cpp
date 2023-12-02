@@ -63,7 +63,7 @@ void reverseString(char str[]) {
     }
 }
 
-// ============================= Infix to Prefix Function =============================
+// ====================== Infix to Prefix Function ======================
 void infixToPrefix(char infix_exp[], char prefix_exp[]) {
     int i, j;
     char x, item;

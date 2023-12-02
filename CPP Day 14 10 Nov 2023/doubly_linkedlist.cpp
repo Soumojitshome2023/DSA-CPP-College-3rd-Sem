@@ -9,7 +9,7 @@ struct Node
     Node *prev;
 };
 
-// ============================= Create Node =============================
+// ========================== Create Node ==========================
 Node *createNode(int data)
 {
     Node *newNode = new Node;
@@ -19,7 +19,7 @@ Node *createNode(int data)
     return newNode;
 }
 
-// ============================= Insert At Beginning =============================
+// ======================= Insert At Beginning =======================
 Node *insertAtBeginning(Node *head, int data)
 {
     Node *newNode = createNode(data);

@@ -2,6 +2,13 @@
 #include <iostream>
 using namespace std;
 
+/*
+Best Time Complexity : O(nlogn)
+Average Time Complexity : O(nlogn)
+Worst Time Complexity : O(nlogn)
+Worst Space Complexity : O(n)
+*/
+
 void heapify(int arr[], int n, int i)
 {
     int largest = i;
