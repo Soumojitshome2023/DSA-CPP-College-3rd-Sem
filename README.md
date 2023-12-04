@@ -117,14 +117,14 @@ or
 * Merge Sort
 * Heap Sort
 
-| Sort<br />Name | Best Time<br />Complexity | Average Time<br />Complexity | Worst Time<br />Complexity | Worst Space<br />Complexity | Stable |
-| :------------: | :-----------------------: | :---------------------------: | :-------------------------: | :-------------------------: | :----: |
-|     Bubble     |           O(n)           |            O(n^2)            |           O(n^2)           |            O(1)            |  Yes  |
-|   Insertion   |           O(n)           |            O(n^2)            |           O(n^2)           |            O(1)            |  Yes  |
-|   Selection   |          O(n^2)          |            O(n^2)            |           O(n^2)           |            O(1)            |        |
-|     Quick     |         O(nlogn)         |           O(nlogn)           |           O(n^2)           |           O(logn)           |        |
-|     Merge     |         O(nlogn)         |           O(nlogn)           |          O(nlogn)          |            O(n)            |  Yes  |
-|      Heap      |         O(nlogn)         |           O(nlogn)           |          O(nlogn)          |            O(n)            |        |
+| Sort<br />Name | Best Time<br />Complexity | Average Time<br />Complexity | Worst Time<br />Complexity | Worst Space<br />Complexity | Stable | Adaptive |
+| :------------: | :-----------------------: | :---------------------------: | :-------------------------: | :-------------------------: | :----: | :------: |
+|     Bubble     |           O(n)           |            O(n^2)            |           O(n^2)           |            O(1)            |  Yes  |   Yes   |
+|   Insertion   |           O(n)           |            O(n^2)            |           O(n^2)           |            O(1)            |  Yes  |   Yes   |
+|   Selection   |          O(n^2)          |            O(n^2)            |           O(n^2)           |            O(1)            |        |          |
+|     Quick     |         O(nlogn)         |           O(nlogn)           |           O(n^2)           |           O(logn)           |        |   Yes   |
+|     Merge     |         O(nlogn)         |           O(nlogn)           |          O(nlogn)          |            O(n)            |  Yes  |          |
+|      Heap      |         O(nlogn)         |           O(nlogn)           |          O(nlogn)          |            O(n)            |        |          |
 
 ### 12. [13 Oct 2023 Day 12 : Implement a stack using singly linked list](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CPP%20Day%2012%2013%20Oct%202023)
 
