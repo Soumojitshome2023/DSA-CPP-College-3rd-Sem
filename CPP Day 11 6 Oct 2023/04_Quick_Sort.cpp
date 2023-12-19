@@ -63,7 +63,6 @@ void quickSort(int A[], int low, int high)
     }
 }
 
-
 int main()
 {
     // int A[] = {3, 5, 2, 13, 12, 3, 2, 13, 45};

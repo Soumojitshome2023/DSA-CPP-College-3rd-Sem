@@ -136,46 +136,53 @@ Node *deleteEnd(Node *head)
     return head;
 }
 
-// ============================= Delete Middle =============================
-Node *deleteMiddle(Node *head)
+// ============================= Delete at Index =============================
+Node *deleteAtIndex(Node *head, int index)
 {
     if (head == nullptr)
     {
-        cout << "List is empty. Cannot delete from the middle." << endl;
+        cout << "List is empty. Cannot delete at index." << endl;
         return nullptr;
     }
 
-    if (head->next == nullptr)
+    if (index == 0)
     {
-        delete head;
-        return nullptr;
-    }
-
-    Node *slowPtr = head;
-    Node *fastPtr = head;
-    Node *prev = nullptr;
-
-    while (fastPtr != nullptr && fastPtr->next != nullptr)
-    {
-        fastPtr = fastPtr->next->next;
-        prev = slowPtr;
-        slowPtr = slowPtr->next;
-    }
-
-    if (prev != nullptr)
-    {
-        prev->next = slowPtr->next;
-        if (slowPtr->next != nullptr)
+        Node *temp = head;
+        head = head->next;
+        if (head != nullptr)
         {
-            slowPtr->next->prev = prev;
+            head->prev = nullptr;
         }
-        delete slowPtr;
-    }
-    else
-    {
-        head = deleteFront(head);
+        delete temp;
+        return head;
     }
 
+    Node *current = head;
+    int count = 0;
+
+    while (current != nullptr && count < index)
+    {
+        current = current->next;
+        count++;
+    }
+
+    if (current == nullptr)
+    {
+        cout << "Index out of bounds. Cannot delete." << endl;
+        return head;
+    }
+
+    if (current->prev != nullptr)
+    {
+        current->prev->next = current->next;
+    }
+
+    if (current->next != nullptr)
+    {
+        current->next->prev = current->prev;
+    }
+
+    delete current;
     return head;
 }
 
@@ -251,7 +258,7 @@ int main()
         cout << "3. Insert at index\n";
         cout << "4. Delete from front\n";
         cout << "5. Delete from end\n";
-        cout << "6. Delete from middle\n";
+        cout << "6. Delete at index\n";
         cout << "7. Display Forward\n";
         cout << "8. Display Backward\n";
         cout << "9. Find length\n";
@@ -287,7 +294,9 @@ int main()
             head = deleteEnd(head);
             break;
         case 6:
-            head = deleteMiddle(head);
+            cout << "Enter index to delete: ";
+            cin >> index;
+            head = deleteAtIndex(head, index);
             break;
         case 7:
             cout << "Doubly Linked List (Forward): ";
