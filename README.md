@@ -1,4 +1,4 @@
-![MasterHead](https://private-user-images.githubusercontent.com/121761154/291540430-ab0c695f-5470-472a-955b-2fcd4ac1eea3.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI5NzgzNzUsIm5iZiI6MTcwMjk3ODA3NSwicGF0aCI6Ii8xMjE3NjExNTQvMjkxNTQwNDMwLWFiMGM2OTVmLTU0NzAtNDcyYS05NTViLTJmY2Q0YWMxZWVhMy5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMxMjE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMTIxOVQwOTI3NTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kODU2N2U3MWIxMThhMzkyMjU1OGE0MGNhNjcxODc1NjAyZGExYmFlNjM3ZjQwYTliMzA1ZTY5NDZmYTM2YWNiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.AApXqv9CjGJnwiVSIBu7qvNLXsaPrak7SV7u7zpZb4I)
+![MasterHead](https://user-images.githubusercontent.com/121761154/291540430-ab0c695f-5470-472a-955b-2fcd4ac1eea3.gif)
 
 <div align="center">
  <h1> DSA C++ College 3rd Sem </h1>
@@ -149,15 +149,12 @@ or
 
 * Binary Tree Input Element
 
-### [TCS CodeVita 24 Nov 2023 Round 1](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/CodeVita%2024%20Nov%202023%20Round%201)
 
-* A. Sort And Reflect (Accepted)
-* B. Zero Count (Accepted)
-* C. String From Rank
-* D. Online Shopping
-* E. SuperMarket (Accepted)
-* F. Harmonic Homology
-* Others Problem :
-  * Best Bubble
+
+### [Graph](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/Graph)
+
+* BFS Breadth First Search
+* DFS Depth First Search
+
 
 ---
