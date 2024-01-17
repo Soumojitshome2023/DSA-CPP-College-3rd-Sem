@@ -157,4 +157,33 @@ or
 * DFS Depth First Search
 
 
+### [Important](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/Important)
+
+* Binary search 
+* Linear search 
+* Matrix addition 
+* Matrix multiplication 
+* Stack using array
+* Stack using linked list
+* Infix to prefix
+* Infix to postfix
+* Postfix evaluation 
+* Queue using array
+* Circular queue using array
+* Circular queue using linked list
+* Queue using linked list
+* Single linked list
+* Circular linked list
+* Double linked list
+* Polynomial addition
+* Sparse matrix addition 
+* Sparse matrix subtraction
+* Bubble sort
+* Insertion sort
+* Selection sort
+* Quick sort
+* Merge sort
+* Heap sort
+* Tower Of Hanoi
+
 ---
