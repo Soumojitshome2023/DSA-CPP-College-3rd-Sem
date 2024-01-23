@@ -185,5 +185,7 @@ or
 * Merge sort
 * Heap sort
 * Tower Of Hanoi
+* BST formation
+* Tree traversal
 
 ---
