@@ -59,6 +59,7 @@ int main()
     struct node *p3 = createNode(5);
     struct node *p4 = createNode(2);
 
+    // Linking the root node with left and right children
     p->left = p1;
     p->right = p2;
     p1->left = p3;
@@ -70,10 +71,11 @@ int main()
     //   / \
     //  5   2
 
+
+
     // ======================= Pre Order =======================
     // Pre Order :  Root -> Left SubTree -> Right SubTree
     // Ans : 4 1 5 2 6
-    // Linking the root node with left and right children
     cout << "Pre-order Traversal:" << endl;
     preOrder(p);
     // ===========================================================
@@ -83,7 +85,6 @@ int main()
     // ======================= In Order =======================
     // In Order : Left SubTree -> Root ->  Right SubTree
     // Ans : 5 1 2 4 6
-    // Linking the root node with left and right children
     cout << "\nIn-order Traversal:" << endl;
     inOrder(p);
     // ===========================================================
@@ -94,7 +95,6 @@ int main()
     // ======================= Post Order =======================
     // Post Order:  Left SubTree -> Right SubTree -> Root
     // Ans : 5 2 1 6 4
-    // Linking the root node with left and right children
     cout << "\nPost-order Traversal:" << endl;
     postOrder(p);
 
