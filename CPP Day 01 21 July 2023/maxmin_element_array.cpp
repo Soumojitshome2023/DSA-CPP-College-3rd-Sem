@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Max Min
+// ===================== Max Min elements in an Array =====================
 
 int main()
 {

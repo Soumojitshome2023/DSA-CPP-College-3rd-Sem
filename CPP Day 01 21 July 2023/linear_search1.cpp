@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Linear Search With Function
-
 int linear_search(int arr[], int ele, int n);
 
 int main()
@@ -35,6 +33,7 @@ int main()
 	return 0;
 }
 
+// ===================== Linear Search =====================
 int linear_search(int arr[], int ele, int n)
 {
 

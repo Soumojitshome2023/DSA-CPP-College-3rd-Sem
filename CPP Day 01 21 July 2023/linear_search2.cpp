@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Linear Search Without Function
-
+// ===================== Linear Search Without Function =====================
 int main()
 {
 

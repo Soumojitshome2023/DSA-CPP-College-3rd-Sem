@@ -44,7 +44,7 @@ void TowerOfHanoi(int num, char A, char B, char C)
 int main()
 {
     int numOfDisk;
-    cout << "Enter the no. of disks" << endl;
+    cout << "Enter the no. of disks : ";
     cin >> numOfDisk;
 
     // calling recursive funtion

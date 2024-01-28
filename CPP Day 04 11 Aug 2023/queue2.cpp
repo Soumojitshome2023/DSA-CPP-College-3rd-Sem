@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 
-// Queue With Class
+// ===================== Queue With Class =====================
 
 using namespace std;
 #define max 10

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Circular Queue Without Class
+//===================== Circular Queue Without Class =====================
 
 #define max 10
 

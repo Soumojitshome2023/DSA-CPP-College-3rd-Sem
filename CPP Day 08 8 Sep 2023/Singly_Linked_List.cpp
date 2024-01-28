@@ -2,7 +2,7 @@
 #include <stdlib.h>
 using namespace std;
 
-// Singly Linked List
+// ===================== Singly Linked List =====================
 struct Node
 {
     int data;

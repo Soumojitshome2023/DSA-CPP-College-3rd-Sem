@@ -1,4 +1,4 @@
-![MasterHead](https://user-images.githubusercontent.com/121761154/291540430-ab0c695f-5470-472a-955b-2fcd4ac1eea3.gif)
+![MasterHead](https://raw.githubusercontent.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/main/Others/milky-way-night-sky-gif.gif)
 
 <div align="center">
  <h1> DSA C++ College 3rd Sem </h1>
@@ -159,33 +159,40 @@ or
 
 ### [Important](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/tree/main/Important)
 
-* Binary search 
-* Linear search 
-* Matrix addition 
-* Matrix multiplication 
-* Stack using array
-* Stack using linked list
-* Infix to prefix
-* Infix to postfix
-* Postfix evaluation 
-* Queue using array
-* Circular queue using array
-* Circular queue using linked list
-* Queue using linked list
-* Single linked list
-* Circular linked list
-* Double linked list
-* Polynomial addition
-* Sparse matrix addition 
-* Sparse matrix subtraction
-* Bubble sort
-* Insertion sort
-* Selection sort
-* Quick sort
-* Merge sort
-* Heap sort
-* Tower Of Hanoi
-* BST formation
-* Tree traversal
+01. Binary search 
+02. Linear search 
+03. Matrix addition 
+04. Matrix multiplication 
+05. Stack using array
+06. Stack using linked list
+07. Infix to prefix
+08. Infix to postfix
+09. Postfix evaluation 
+10. Queue using array
+11. Circular queue using array
+12. Circular queue using linked list
+13. Queue using linked list
+14. Single linked list
+15. Circular linked list
+16. Double linked list
+17. Polynomial addition
+18. Sparse matrix addition 
+19. Sparse matrix subtraction
+20. Bubble sort
+21. Insertion sort
+22. Selection sort
+23. Quick sort
+24. Merge sort
+25. Heap sort
+26. Tower Of Hanoi
+27. BST formation
+28. Tree traversal
+29. Find the common elements between two matrices
+
+---
+
+### Example of the algorithm of 'Tower Of Hanoi' (For n=3).
+
+![TowerOfHanoi](https://raw.githubusercontent.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/main/Others/tower-of-hanoi.png)
 
 ---
