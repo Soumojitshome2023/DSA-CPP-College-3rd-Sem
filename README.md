@@ -117,7 +117,7 @@ or
 * Merge Sort
 * Heap Sort
 
-[Sorting Readme](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/blob/main/SORTINGCODE.md)
+[Sorting Readme](https://github.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/blob/main/CPP%20Day%2011%206%20Oct%202023/Sorting.md)
 
 | Sort<br />Name | Best Time<br />Complexity | Average Time<br />Complexity | Worst Time<br />Complexity | Worst Space<br />Complexity | Stable | Adaptive |
 | :------------: | :-----------------------: | :---------------------------: | :-------------------------: | :-------------------------: | :----: | :------: |
