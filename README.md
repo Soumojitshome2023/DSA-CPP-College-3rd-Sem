@@ -193,6 +193,4 @@ or
 
 ### Example of the algorithm of 'Tower Of Hanoi' (For n=3).
 
-![TowerOfHanoi](https://raw.githubusercontent.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/main/Others/tower-of-hanoi.png)
-
----
+![TowerOfHanoiPic](https://raw.githubusercontent.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/main/Others/tower-of-hanoi.png)
