@@ -1,13 +1,14 @@
 #include <iostream>
 using namespace std;
 
-/*
+/*==========================================
 Best Time Complexity : O(nlogn)
 Average Time Complexity : O(nlogn)
 Worst Time Complexity : O(nlogn)
 Worst Space Complexity : O(n)
-*/
+==========================================*/
 
+// =============================== Print Array ===============================
 void printArray(int A[], int n)
 {
     for (int i = 0; i < n; i++)
@@ -16,60 +17,8 @@ void printArray(int A[], int n)
     }
     cout << endl;
 }
-/*
-void merge(int A[], int mid, int low, int high)
-{
-    int i, j, k, B[100];
-    i = low;
-    j = mid + 1;
-    k = low;
 
-    while (i <= mid && j <= high)
-    {
-        if (A[i] < A[j])
-        {
-            B[k] = A[i];
-            i++;
-            k++;
-        }
-        else
-        {
-            B[k] = A[j];
-            j++;
-            k++;
-        }
-    }
-    while (i <= mid)
-    {
-        B[k] = A[i];
-        k++;
-        i++;
-    }
-    while (j <= high)
-    {
-        B[k] = A[j];
-        k++;
-        j++;
-    }
-    for (int i = low; i <= high; i++)
-    {
-        A[i] = B[i];
-    }
-}
-
-void mergeSort(int A[], int low, int high)
-{
-    int mid;
-    if (low < high)
-    {
-        mid = (low + high) / 2;
-        mergeSort(A, low, mid);
-        mergeSort(A, mid + 1, high);
-        merge(A, mid, low, high);
-    }
-}
-*/
-
+// =============================== Merge ===============================
 void merge(int arr[], int l, int m, int r)
 {
     int i, j, k;
@@ -113,6 +62,8 @@ void merge(int arr[], int l, int m, int r)
         k++;
     }
 }
+
+// =============================== Merge Sort ===============================
 void mergeSort(int arr[], int l, int r)
 {
     if (l < r)
@@ -126,6 +77,7 @@ void mergeSort(int arr[], int l, int r)
     }
 }
 
+// =============================== Main ===============================
 int main()
 {
     // int A[] = {9, 14, 4, 8, 7, 5, 6};
@@ -136,3 +88,5 @@ int main()
     printArray(A, n);
     return 0;
 }
+
+// ==============================================================

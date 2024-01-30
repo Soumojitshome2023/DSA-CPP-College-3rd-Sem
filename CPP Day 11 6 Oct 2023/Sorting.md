@@ -37,5 +37,13 @@
 
 ![QuickSortPic](https://raw.githubusercontent.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/main/Others/quick-sort-pic.png)
 
+### 5. Merge Sort : 
 
+![MergeSortPic](https://raw.githubusercontent.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/main/Others/merge-sort-pic.png)
+
+### 6. Heap Sort : 
+
+![HeapSortPic](https://raw.githubusercontent.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/main/Others/heap-sort-pic1.png)
+
+![HeapSortPic](https://raw.githubusercontent.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/main/Others/heap-sort-pic2.png)
 ---
