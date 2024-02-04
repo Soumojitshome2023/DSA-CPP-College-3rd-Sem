@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Function to perform sparse matrix addition
+// ============================= Add Sparse Matrix =============================
 void addSparseMatrices(int rows, int cols, int mat1[][3], int mat2[][3], int result[][3])
 {
     int size1, size2;
@@ -98,7 +98,7 @@ void addSparseMatrices(int rows, int cols, int mat1[][3], int mat2[][3], int res
     result[0][2] = k - 1;
 }
 
-// Function to display a sparse matrix
+// ============================= Display Sparse matrix =============================
 void displaySparseMatrix(int mat[][3])
 {
     int rows = mat[0][0];
@@ -111,6 +111,7 @@ void displaySparseMatrix(int mat[][3])
     }
 }
 
+// ============================= Main =============================
 int main()
 {
     int rows, cols;
@@ -129,3 +130,5 @@ int main()
 
     return 0;
 }
+
+// ==========================================================

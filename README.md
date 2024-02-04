@@ -195,4 +195,6 @@ or
 
 ### Example of the algorithm of 'Tower Of Hanoi' (For n=3).
 
+#### Tower Of Hanoi YouTube Video Link : [Click Here](https://youtu.be/9hZdrM0Ipf8?si=yNJie9FEv-9VKWff)
+
 ![TowerOfHanoiPic](https://raw.githubusercontent.com/Soumojitshome2023/DSA-CPP-College-3rd-Sem/main/Others/tower-of-hanoi.png)

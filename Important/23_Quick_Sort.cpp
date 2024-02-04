@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-/*
+/*==========================================
 Best Time Complexity : O(nlogn)
 Average Time Complexity : O(nlogn)
 Worst Time Complexity : O(n^2)
 Worst Space Complexity : O(logn)
-*/
+==========================================*/
 
 void printArray(int A[], int n)
 {
@@ -17,6 +17,7 @@ void printArray(int A[], int n)
     cout << endl;
 }
 
+// ========================== Partition ==========================
 int partition(int A[], int low, int high)
 {
     int pivot = A[low];
@@ -51,6 +52,7 @@ int partition(int A[], int low, int high)
     return j;
 }
 
+// ========================== Quick Sort ==========================
 void quickSort(int A[], int low, int high)
 {
     int partitionIndex; // Index of pivot after partition
@@ -63,6 +65,7 @@ void quickSort(int A[], int low, int high)
     }
 }
 
+// ========================== Main ==========================
 int main()
 {
     // int A[] = {3, 5, 2, 13, 12, 3, 2, 13, 45};
@@ -77,3 +80,5 @@ int main()
     printArray(A, n);
     return 0;
 }
+
+// ============================================================================

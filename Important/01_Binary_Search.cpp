@@ -1,10 +1,13 @@
 #include <iostream>
 using namespace std;
 
-int binarySearch(int arr[], int n, int target) {
+// ========================= Binary Search =========================
+int binarySearch(int arr[], int n, int target)
+{
     int left = 0, right = n - 1;
 
-    while (left <= right) {
+    while (left <= right)
+    {
         int mid = left + (right - left) / 2;
 
         if (arr[mid] == target)
@@ -18,7 +21,9 @@ int binarySearch(int arr[], int n, int target) {
     return -1; // Element not found
 }
 
-int main() {
+// ========================= Main =========================
+int main()
+{
     int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int n = sizeof(arr) / sizeof(arr[0]);
     int target = 5;

@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// ========================= Multiplication =========================
 void matrixMultiplication(int A[][3], int B[][3], int result[][3], int rowsA, int colsA, int colsB)
 {
     for (int i = 0; i < rowsA; i++)
@@ -16,6 +17,7 @@ void matrixMultiplication(int A[][3], int B[][3], int result[][3], int rowsA, in
     }
 }
 
+// ========================= Display =========================
 void displayMatrix(int matrix[][3], int rows, int cols)
 {
     for (int i = 0; i < rows; i++)
@@ -28,6 +30,7 @@ void displayMatrix(int matrix[][3], int rows, int cols)
     }
 }
 
+// ========================= Main =========================
 int main()
 {
     int A[][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};

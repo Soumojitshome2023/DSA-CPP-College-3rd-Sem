@@ -9,6 +9,7 @@ struct node
     struct node *right;
 };
 
+// ======================== Create Node ========================
 struct node *createNode(int data)
 {
     struct node *n;                                 // creating a node pointer
@@ -19,6 +20,7 @@ struct node *createNode(int data)
     return n;                                       // Finally returning the created node
 }
 
+// ======================== Pre Order ========================
 void preOrder(struct node *root)
 {
     if (root != NULL)
@@ -29,6 +31,7 @@ void preOrder(struct node *root)
     }
 }
 
+// ======================== In Order ========================
 void inOrder(struct node *root)
 {
     if (root != NULL)
@@ -39,6 +42,7 @@ void inOrder(struct node *root)
     }
 }
 
+// ======================== Post Order ========================
 void postOrder(struct node *root)
 {
     if (root != NULL)
@@ -49,9 +53,9 @@ void postOrder(struct node *root)
     }
 }
 
+// ======================== Main ========================
 int main()
 {
-
     // Constructing the root node - Using Function (Recommended)
     struct node *p = createNode(4);
     struct node *p1 = createNode(1);
@@ -71,16 +75,12 @@ int main()
     //   / \
     //  5   2
 
-
-
     // ======================= Pre Order =======================
     // Pre Order :  Root -> Left SubTree -> Right SubTree
     // Ans : 4 1 5 2 6
     cout << "Pre-order Traversal:" << endl;
     preOrder(p);
     // ===========================================================
-    
-    
 
     // ======================= In Order =======================
     // In Order : Left SubTree -> Root ->  Right SubTree
@@ -89,16 +89,11 @@ int main()
     inOrder(p);
     // ===========================================================
 
-
-
-
     // ======================= Post Order =======================
     // Post Order:  Left SubTree -> Right SubTree -> Root
     // Ans : 5 2 1 6 4
     cout << "\nPost-order Traversal:" << endl;
     postOrder(p);
-
-
 
     return 0;
 }

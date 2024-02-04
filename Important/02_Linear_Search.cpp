@@ -1,8 +1,11 @@
 #include <iostream>
 using namespace std;
 
-int linearSearch(int arr[], int n, int target) {
-    for (int i = 0; i < n; i++) {
+// ========================= Linear Search =========================
+int linearSearch(int arr[], int n, int target)
+{
+    for (int i = 0; i < n; i++)
+    {
         if (arr[i] == target)
             return i; // Element found
     }
@@ -10,7 +13,9 @@ int linearSearch(int arr[], int n, int target) {
     return -1; // Element not found
 }
 
-int main() {
+// ========================= Main =========================
+int main()
+{
     int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int n = sizeof(arr) / sizeof(arr[0]);
     int target = 5;

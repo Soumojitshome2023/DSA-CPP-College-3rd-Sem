@@ -1,67 +1,51 @@
 #include <iostream>
-#include<string>
-#define sizes 100
+#include <stack>
+
 using namespace std;
 
-// Postfix to Infix 
+// Check if a character is an operand
+bool isOperand(char c)
+{
+    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9');
+}
 
-class stack
+// Prefix to Infix conversion function
+string prefixToInfix(string prefix)
 {
-    string item[100];
-    int top;
-    public:
-        stack()
-        {
-            top=-1;
-        }
-        void push(string str)
-        {
-            if(top==sizes-1)
-            {
-                cout<<"stack overflow!!\n";
-                return;
-            }
-            top++;
-            item[top]=str;
-        }
-        string pop()
-        {
-            int i;
-            string temp;
-            if(top==-1)
-            {
-                cout<<"stack underflow!!\n";
-                return "abc";
-            }
-            temp = item[top];
-            top--;
-            return temp;
-        }
-};
-int main(int argc, char** argv) 
-{
-    int i,j=0;
-    stack st;
-    string postfix,infix;
-    cout<<"Enter postfix expression:\n";
-    cin>>postfix;
-    for(i=0;i<postfix.size();i++)
+    stack<string> s;
+
+    for (int i = prefix.length() - 1; i >= 0; i--)
     {
-        if(postfix[i]=='+' || postfix[i]=='-' || postfix[i]=='*' || postfix[i]=='/' || postfix[i]=='^')
+        if (isOperand(prefix[i]))
         {
-            string temp,op1,op2;
-            op2=st.pop();
-            op1=st.pop();
-            temp='('+op1+postfix[i]+op2+')';
-            st.push(temp);
+            // If operand, push it onto the stack
+            s.push(string(1, prefix[i]));
         }
         else
         {
-            string flag;
-            flag=flag+postfix[i];
-            st.push(flag);
+            // If operator, pop two operands, combine, and push back
+            string operand1 = s.top();
+            s.pop();
+            string operand2 = s.top();
+            s.pop();
+            s.push("(" + operand1 + prefix[i] + operand2 + ")");
         }
     }
-    cout<<"The equivalent infix expression is:\n"<<st.pop();
+
+    return s.top();
+}
+
+int main()
+{
+    string infix, prefix;
+    cout << "Enter a PREFIX Expression: ";
+    cin >> prefix;
+
+    cout << "PREFIX EXPRESSION: " << prefix << endl;
+
+    infix = prefixToInfix(prefix);
+
+    cout << "INFIX EXPRESSION: " << infix << endl;
+
     return 0;
 }

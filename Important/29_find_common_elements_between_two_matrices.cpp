@@ -4,6 +4,7 @@ using namespace std;
 
 const int MAX_SIZE = 100; // You can adjust the maximum size of matrices as per your requirements
 
+// ========================= Input Matrix =========================
 void inputMatrix(int matrix[MAX_SIZE][MAX_SIZE], int rows, int cols)
 {
     cout << "Enter matrix elements:" << endl;
@@ -17,6 +18,7 @@ void inputMatrix(int matrix[MAX_SIZE][MAX_SIZE], int rows, int cols)
     }
 }
 
+// ========================= Find Common Element =========================
 void findCommonElements(const int matrix1[MAX_SIZE][MAX_SIZE], const int matrix2[MAX_SIZE][MAX_SIZE], int rows, int cols)
 {
     cout << "Common elements between the two matrices are:" << endl;
@@ -41,6 +43,7 @@ void findCommonElements(const int matrix1[MAX_SIZE][MAX_SIZE], const int matrix2
     cout << endl;
 }
 
+// ========================= Main =========================
 int main()
 {
     int rows, cols;
@@ -61,3 +64,5 @@ int main()
 
     return 0;
 }
+
+// =====================================================================

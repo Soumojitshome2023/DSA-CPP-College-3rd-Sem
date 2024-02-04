@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 
+// ============================= Node =============================
 class Node
 {
 public:
@@ -16,6 +17,7 @@ public:
     }
 };
 
+// ============================= Stack =============================
 class Stack
 {
     Node *top;

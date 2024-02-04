@@ -5,7 +5,7 @@
 #define SIZE 100
 using namespace std;
 
-// Infix to Postfix
+// ============================= Infix to Postfix =============================
 
 char stack[SIZE];
 int top = -1;

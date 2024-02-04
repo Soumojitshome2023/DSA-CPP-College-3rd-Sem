@@ -1,5 +1,5 @@
 
-// Stack | Push, Pop, Display
+//========================= Stack | Push, Pop, Display =========================
 
 #include <iostream>
 #include <stdlib.h>
