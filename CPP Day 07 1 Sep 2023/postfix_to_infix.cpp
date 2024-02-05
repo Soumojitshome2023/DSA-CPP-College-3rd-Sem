@@ -1,7 +1,8 @@
 #include <iostream>
-#include <stack>
 
 using namespace std;
+
+const int MAX_SIZE = 100;
 
 // Check if a character is an operand
 bool isOperand(char c)
@@ -9,41 +10,40 @@ bool isOperand(char c)
     return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9');
 }
 
-// Prefix to Infix conversion function
-string prefixToInfix(string prefix)
+// Function to perform postfix to infix conversion
+string postfixToInfix(string postfix)
 {
-    stack<string> s;
+    string stack[MAX_SIZE];
+    int top = -1;
 
-    for (int i = prefix.length() - 1; i >= 0; i--)
+    for (int i = 0; i < postfix.length(); i++)
     {
-        if (isOperand(prefix[i]))
+        if (isOperand(postfix[i]))
         {
             // If operand, push it onto the stack
-            s.push(string(1, prefix[i]));
+            stack[++top] = string(1, postfix[i]);
         }
         else
         {
             // If operator, pop two operands, combine, and push back
-            string operand1 = s.top();
-            s.pop();
-            string operand2 = s.top();
-            s.pop();
-            s.push("(" + operand1 + prefix[i] + operand2 + ")");
+            string operand2 = stack[top--];
+            string operand1 = stack[top--];
+            stack[++top] = "(" + operand1 + postfix[i] + operand2 + ")";
         }
     }
 
-    return s.top();
+    return stack[top];
 }
 
 int main()
 {
-    string infix, prefix;
-    cout << "Enter a PREFIX Expression: ";
-    cin >> prefix;
+    string infix, postfix;
+    cout << "Enter a POSTFIX Expression: ";
+    cin >> postfix;
 
-    cout << "PREFIX EXPRESSION: " << prefix << endl;
+    cout << "POSTFIX EXPRESSION: " << postfix << endl;
 
-    infix = prefixToInfix(prefix);
+    infix = postfixToInfix(postfix);
 
     cout << "INFIX EXPRESSION: " << infix << endl;
 
