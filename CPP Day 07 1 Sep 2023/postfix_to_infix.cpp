@@ -1,51 +1,90 @@
 #include <iostream>
+#include <cstring>
+#include <cstdlib>
+#include <cctype>
+
+#define SIZE 100
 
 using namespace std;
 
-const int MAX_SIZE = 100;
+char stack[SIZE];
+int top = -1;
 
-// Check if a character is an operand
-bool isOperand(char c)
+// Function to push an item onto the stack
+void push(char item)
 {
-    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9');
+    if (top >= SIZE - 1)
+        cout << "Stack overflow" << endl;
+    else
+    {
+        top++;
+        stack[top] = item;
+    }
 }
 
-// Function to perform postfix to infix conversion
-string postfixToInfix(string postfix)
+// Function to pop an item from the stack
+char pop()
 {
-    string stack[MAX_SIZE];
-    int top = -1;
-
-    for (int i = 0; i < postfix.length(); i++)
+    char item;
+    if (top < 0)
     {
-        if (isOperand(postfix[i]))
+        cout << "Stack underflow" << endl;
+        exit(1);
+    }
+    else
+    {
+        item = stack[top];
+        top = top - 1;
+        return (item);
+    }
+}
+
+// Function to check if a character is an operand
+bool isOperand(char c)
+{
+    return isalnum(c); // Using isalnum to check if it's an alphanumeric character
+}
+
+// Function to convert postfix to infix expression
+void postfixToInfix(char postfix_exp[], char infix_exp[])
+{
+    int i, j;
+    char operand1, operand2, operatorSymbol;
+
+    for (i = 0; postfix_exp[i] != '\0'; i++)
+    {
+        if (isOperand(postfix_exp[i]))
         {
-            // If operand, push it onto the stack
-            stack[++top] = string(1, postfix[i]);
+            push(postfix_exp[i]);
         }
-        else
+        else if (postfix_exp[i] == '+' || postfix_exp[i] == '-' || postfix_exp[i] == '*' || postfix_exp[i] == '/')
         {
-            // If operator, pop two operands, combine, and push back
-            string operand2 = stack[top--];
-            string operand1 = stack[top--];
-            stack[++top] = "(" + operand1 + postfix[i] + operand2 + ")";
+            operand2 = pop();
+            operand1 = pop();
+            operatorSymbol = postfix_exp[i];
+
+            // Combine operands with the operator and surround with parentheses
+            infix_exp[++top] = '(';
+            infix_exp[++top] = operand1;
+            infix_exp[++top] = operatorSymbol;
+            infix_exp[++top] = operand2;
+            infix_exp[++top] = ')';
         }
     }
 
-    return stack[top];
+    infix_exp[++top] = '\0';
 }
 
+// Main function
 int main()
 {
-    string infix, postfix;
-    cout << "Enter a POSTFIX Expression: ";
+    char postfix[SIZE], infix[SIZE];
+
+    cout << "Enter the postfix expression : ";
     cin >> postfix;
 
-    cout << "POSTFIX EXPRESSION: " << postfix << endl;
-
-    infix = postfixToInfix(postfix);
-
-    cout << "INFIX EXPRESSION: " << infix << endl;
+    postfixToInfix(postfix, infix);
+    cout << "Infix expression : " << infix << endl;
 
     return 0;
 }

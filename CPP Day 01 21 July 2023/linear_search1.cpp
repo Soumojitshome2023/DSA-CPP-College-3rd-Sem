@@ -3,6 +3,7 @@ using namespace std;
 
 int linear_search(int arr[], int ele, int n);
 
+// ============================ Main ============================
 int main()
 {
 
@@ -54,3 +55,5 @@ int linear_search(int arr[], int ele, int n)
 	else
 		cout << "Not Found";
 }
+
+// ========================================================

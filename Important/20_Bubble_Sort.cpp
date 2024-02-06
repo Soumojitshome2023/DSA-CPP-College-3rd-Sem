@@ -8,6 +8,7 @@ Worst Time Complexity : O(n^2)
 Worst Space Complexity : O(1)
 ==========================================*/
 
+// ============================ Print ============================
 void printArray(int A[], int n)
 {
     for (int i = 0; i < n; i++)
@@ -33,17 +34,14 @@ void bubbleSort(int A[], int n)
             }
         }
     }
-    /*
-    Index=>     0   1   2   3   4   5    6     7   8    9   10
-    Elements=>  1   2   5   6   12  54   625   7   23   9   987
-    */
 }
 
+// ============================ Main ============================
 int main()
 {
-    // int A[] = {12, 54, 65, 7, 23, 9};
+
     int A[] = {1, 2, 5, 6, 12, 54, 625, 7, 23, 9, 987};
-    // int A[] = {1, 2, 3, 4, 5, 6};
+
     int n = 11;
     printArray(A, n); // Printing the array before sorting
     bubbleSort(A, n); // Function to sort the array

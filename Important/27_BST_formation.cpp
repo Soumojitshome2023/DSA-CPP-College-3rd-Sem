@@ -73,6 +73,7 @@ void postOrder(struct node *root)
     }
 }
 
+// ============================ Main ============================
 int main()
 {
     struct node *root = NULL;

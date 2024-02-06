@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Circular Queue Using Array
+// ======================= Circular Queue Using Array =======================
 
 #define max 10
 

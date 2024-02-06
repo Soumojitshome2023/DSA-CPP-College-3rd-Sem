@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// ============================ Node ============================
 struct node
 {
     int data;
@@ -73,6 +74,7 @@ void postOrder(struct node *root)
     }
 }
 
+// ============================ Main ============================
 int main()
 {
     struct node *root = NULL;

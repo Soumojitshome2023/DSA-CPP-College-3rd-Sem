@@ -2,6 +2,7 @@
 using namespace std;
 #include <malloc.h>
 
+// ============================ Node ============================
 struct node
 {
     int data;
@@ -9,6 +10,7 @@ struct node
     struct node *right;
 };
 
+// ============================ CreateNode ============================
 struct node *createNode(int data)
 {
     struct node *n;                                 // creating a node pointer
@@ -19,6 +21,7 @@ struct node *createNode(int data)
     return n;                                       // Finally returning the created node
 }
 
+// ============================ Pre Order ============================
 void preOrder(struct node *root)
 {
     if (root != NULL)
@@ -29,6 +32,7 @@ void preOrder(struct node *root)
     }
 }
 
+// ============================ Main ============================
 int main()
 {
 
@@ -38,7 +42,7 @@ int main()
     struct node *p2 = createNode(6);
     struct node *p3 = createNode(5);
     struct node *p4 = createNode(2);
-    
+
     /*=======================================================
      Finally The tree looks like this:
           4
@@ -59,3 +63,5 @@ int main()
     preOrder(p);
     return 0;
 }
+
+// ========================================================

@@ -2,6 +2,7 @@
 using namespace std;
 #include <malloc.h>
 
+// ============================ Node ============================
 struct node
 {
     int data;
@@ -9,6 +10,7 @@ struct node
     struct node *right;
 };
 
+// ============================ CreateNode ============================
 struct node *createNode(int data)
 {
     struct node *n;                                 // creating a node pointer
@@ -18,6 +20,8 @@ struct node *createNode(int data)
     n->right = NULL;                                // Setting the left and right children to NULL
     return n;                                       // Finally returning the created node
 }
+
+// ============================ In Order ============================
 
 void inOrder(struct node *root)
 {
@@ -29,6 +33,7 @@ void inOrder(struct node *root)
     }
 }
 
+// ============================ Main ============================
 int main()
 {
 
@@ -59,3 +64,5 @@ int main()
     inOrder(p);
     return 0;
 }
+
+// ========================================================

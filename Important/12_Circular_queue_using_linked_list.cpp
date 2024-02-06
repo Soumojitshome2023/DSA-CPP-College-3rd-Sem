@@ -1,14 +1,12 @@
 #include <iostream>
 using namespace std;
 
-// Node structure for the linked list
+//============================ Node ============================
 struct Node
 {
     int data;
     Node *next;
 };
-
-// Circular Queue Using Linked List
 
 Node *front = nullptr;
 Node *rear = nullptr;

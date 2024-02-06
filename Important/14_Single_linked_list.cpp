@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// ============================ Node ============================
 struct Node
 {
     int data;
@@ -56,7 +57,7 @@ Node *insertAtIndex(Node *head, int data, int index)
         return insertAtBeginning(head, data);
     }
 
-    /*
+    /*========================================================
 Index=> 0      1     2     3      4   5     6     7
         head   1st   2nd   3rd        4th   5th   6th
         Node   Node  Node  Node       Node  Node  Node
@@ -88,7 +89,7 @@ Index=> 0      1      2          3            4          5     6      7
                             (currentIndex)
                                (current)
 
-    */
+    ========================================================*/
     Node *newNode = createNode(data);
     Node *current = head;
     int currentIndex = 0;

@@ -50,7 +50,6 @@ void swapTerms(Term *term1, Term *term2)
 }
 
 // ========================= Sort Polynomial =========================
-
 void sortPolynomialDescending(Term *&poly)
 {
     if (poly == nullptr || poly->next == nullptr)

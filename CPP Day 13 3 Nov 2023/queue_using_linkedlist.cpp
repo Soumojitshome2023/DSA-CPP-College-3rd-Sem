@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// ============================ Node ============================
 class Node
 {
 public:
@@ -14,6 +15,7 @@ public:
     }
 };
 
+// ============================ Queue ============================
 class Queue
 {
     Node *front;
@@ -26,6 +28,7 @@ public:
         rear = NULL;
     }
 
+    // ============================ EnQueue ============================
     void enqueue(int data)
     {
         Node *temp = new Node(data);
@@ -52,6 +55,7 @@ public:
         return front == NULL;
     }
 
+    // ============================ DeQueue ============================
     void dequeue()
     {
         Node *temp;
@@ -68,6 +72,7 @@ public:
         }
     }
 
+    // ============================ Peek ============================
     int peek()
     {
         if (!isEmpty())
@@ -79,6 +84,7 @@ public:
         }
     }
 
+    // ============================ Display ============================
     void display()
     {
         Node *temp;
@@ -100,6 +106,7 @@ public:
     }
 };
 
+// ============================ Main ============================
 int main()
 {
     int choice, data;
@@ -143,3 +150,5 @@ int main()
 
     return 0;
 }
+
+// ========================================================

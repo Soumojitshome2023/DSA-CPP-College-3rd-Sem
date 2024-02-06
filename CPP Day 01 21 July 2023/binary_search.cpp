@@ -38,3 +38,5 @@ int main(void)
 		: cout << "Element is present at index " << result;
 	return 0;
 }
+
+// ========================================================

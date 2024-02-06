@@ -25,6 +25,7 @@ class Stack
 public:
     Stack() { top = NULL; }
 
+    // ============================ Push ============================
     void push(int data)
     {
 
@@ -43,6 +44,8 @@ public:
     {
         return top == NULL;
     }
+
+    // ============================ Peek ============================
     int peek()
     {
         if (!isEmpty())
@@ -50,6 +53,8 @@ public:
         else
             exit(1);
     }
+
+    // ============================ Pop ============================
     void pop()
     {
         Node *temp;
@@ -65,6 +70,8 @@ public:
             free(temp);
         }
     }
+
+    // ============================ Display ============================
     void display()
     {
         Node *temp;

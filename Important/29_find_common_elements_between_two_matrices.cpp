@@ -2,7 +2,7 @@
 
 using namespace std;
 
-const int MAX_SIZE = 100; // You can adjust the maximum size of matrices as per your requirements
+const int MAX_SIZE = 100;
 
 // ========================= Input Matrix =========================
 void inputMatrix(int matrix[MAX_SIZE][MAX_SIZE], int rows, int cols)

@@ -3,7 +3,7 @@ using namespace std;
 
 const int MAX_SIZE = 5;
 
-// =================== Input ===================
+// ============================ Input ============================
 void inputMatrix(int matrix[][MAX_SIZE], int rows, int cols)
 {
     for (int i = 0; i < rows; i++)
@@ -16,7 +16,7 @@ void inputMatrix(int matrix[][MAX_SIZE], int rows, int cols)
     }
 }
 
-// =================== Addition ===================
+// ============================ Addition ============================
 void matrixAddition(int A[][MAX_SIZE], int B[][MAX_SIZE], int result[][MAX_SIZE], int rows, int cols)
 {
     for (int i = 0; i < rows; i++)
@@ -28,7 +28,7 @@ void matrixAddition(int A[][MAX_SIZE], int B[][MAX_SIZE], int result[][MAX_SIZE]
     }
 }
 
-// =================== Display ===================
+// ============================ Display ============================
 void displayMatrix(int matrix[][MAX_SIZE], int rows, int cols)
 {
     for (int i = 0; i < rows; i++)
@@ -41,7 +41,7 @@ void displayMatrix(int matrix[][MAX_SIZE], int rows, int cols)
     }
 }
 
-// =================== Main ===================
+// ============================ Main ============================
 int main()
 {
     int rows, cols;
@@ -114,4 +114,4 @@ int main()
     return 0;
 }
 
-// ==================================================
+// ========================================================

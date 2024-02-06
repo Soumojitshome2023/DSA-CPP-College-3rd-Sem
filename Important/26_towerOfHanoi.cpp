@@ -40,7 +40,7 @@ void TowerOfHanoi(int num, char A, char B, char C)
     }
 }
 
-// main funtion
+// ============================ Main ============================
 int main()
 {
     int numOfDisk;

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// ============================= Sparse Matrix Subtraction =============================
+// ====================== Sparse Matrix Subtraction ======================
 void subtractSparseMatrices(int rows, int cols, int mat1[][3], int mat2[][3], int result[][3])
 {
     int size1, size2;

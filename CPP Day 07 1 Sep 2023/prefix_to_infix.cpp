@@ -1,53 +1,76 @@
 #include <iostream>
-#include <stack>
+#include <cstring>
+#include <cstdlib>
+#include <cctype>
+
+#define SIZE 100
 
 using namespace std;
 
-bool isOperand(char c)
-{
-    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
-    {
-        return true;
-    }
-    else
-    {
-        return false;
+char stack[SIZE];
+int top = -1;
+
+// Function to push an item onto the stack
+void push(char item) {
+    if (top >= SIZE - 1)
+        cout << "Stack overflow" << endl;
+    else {
+        top++;
+        stack[top] = item;
     }
 }
 
-// ==================== Prefix to Infix Function ====================
-string PrefixToInfix(string prefix)
-{
-    stack<string> s;
-    for (int i = prefix.length() - 1; i >= 0; i--)
-    {
-        if (isOperand(prefix[i]))
-        {
-            string op(1, prefix[i]);
-            // string op = prefix[i];
-            s.push(op);
-        }
-        else
-        {
-            string op1 = s.top();
-            s.pop();
-            string op2 = s.top();
-            s.pop();
-            s.push("(" + op1 + prefix[i] + op2 + ")");
-        }
+// Function to pop an item from the stack
+char pop() {
+    char item;
+    if (top < 0) {
+        cout << "Stack underflow" << endl;
+        exit(1);
+    } else {
+        item = stack[top];
+        top = top - 1;
+        return (item);
     }
-    return s.top();
 }
 
-int main()
-{
-    string infix, prefix;
-    cout << "Enter a PREFIX Expression :";
+// Function to check if a character is an operand
+bool isOperand(char c) {
+    return isalnum(c);  // Using isalnum to check if it's an alphanumeric character
+}
+
+// Function to convert prefix to infix expression
+void prefixToInfix(char prefix_exp[], char infix_exp[]) {
+    int length = strlen(prefix_exp);
+    
+    for (int i = length - 1; i >= 0; i--) {
+        if (isOperand(prefix_exp[i])) {
+            push(prefix_exp[i]);
+        } else if (prefix_exp[i] == '+' || prefix_exp[i] == '-' || prefix_exp[i] == '*' || prefix_exp[i] == '/') {
+            char operand1 = pop();
+            char operand2 = pop();
+            char operatorSymbol = prefix_exp[i];
+
+            // Combine operands with the operator and surround with parentheses
+            infix_exp[++top] = '(';
+            infix_exp[++top] = operand1;
+            infix_exp[++top] = operatorSymbol;
+            infix_exp[++top] = operand2;
+            infix_exp[++top] = ')';
+        }
+    }
+
+    infix_exp[++top] = '\0';
+}
+
+// Main function
+int main() {
+    char prefix[SIZE], infix[SIZE];
+
+    cout << "Enter the prefix expression : ";
     cin >> prefix;
-    cout << "PREFIX EXPRESSION: " << prefix << endl;
-    infix = PrefixToInfix(prefix);
-    cout << endl
-         << "INFIX EXPRESSION: " << infix;
+
+    prefixToInfix(prefix, infix);
+    cout << "Infix expression : " << infix << endl;
 
     return 0;
 }

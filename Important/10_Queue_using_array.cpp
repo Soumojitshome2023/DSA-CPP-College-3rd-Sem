@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 
-// Queue Without Class
+//============================ Queue Without Class ============================
 
 using namespace std;
 #define max 10
@@ -91,3 +91,5 @@ int main()
 
 	return 0;
 }
+
+// ========================================================

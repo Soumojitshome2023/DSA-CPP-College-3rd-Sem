@@ -1,7 +1,7 @@
-#include<iostream>
-#include<string.h>
-#include<ctype.h>
-#include<math.h>
+#include <iostream>
+#include <string.h>
+#include <ctype.h>
+#include <math.h>
 
 // Postfix Evaluation
 
@@ -9,10 +9,12 @@
 using namespace std;
 int stack[size], top = -1;
 
-//================= Push Function ================= 
-void push(int item){
-	if(top >= size-1){
-		cout<<"Overflow";
+//================= Push Function =================
+void push(int item)
+{
+	if (top >= size - 1)
+	{
+		cout << "Overflow";
 		return;
 	}
 	else
@@ -20,13 +22,16 @@ void push(int item){
 }
 
 // ================= Pop Function =================
-int pop(){
+int pop()
+{
 	int item;
-	if(top<0){
-		cout<<"Underflow";
+	if (top < 0)
+	{
+		cout << "Underflow";
 		return 0;
 	}
-	else{
+	else
+	{
 		item = stack[top];
 		top--;
 		return item;
@@ -34,70 +39,76 @@ int pop(){
 }
 
 // ================= evalpost Function =================
-void evalpost(char postfix[]){
+void evalpost(char postfix[])
+{
 	int i, val, a, b;
 	char ch;
-	//push('(');
-	//strcat(postfix, ')');
-	for(i=0; postfix[i] != '\0';i++){
+	// push('(');
+	// strcat(postfix, ')');
+	for (i = 0; postfix[i] != '\0'; i++)
+	{
 		ch = postfix[i];
-		if(isdigit(ch))
-			push(ch-'0');
-		else if(ch == '^' || ch == '*' || ch == '/' || ch == '+' || ch == '-'){
+		if (isdigit(ch))
+			push(ch - '0');
+		else if (ch == '^' || ch == '*' || ch == '/' || ch == '+' || ch == '-')
+		{
 			a = pop();
 			b = pop();
-			
-			switch(ch){
-				case '^':
-						val = pow(b,a);
-						break;
-				case '*':
-						val = b*a;
-						break;
-				case '/':
-						val = b/a;
-						break;
-				case '+':
-						val = b+a;
-						break;
-				case '-':
-						val = b-a;
-						break;			
+
+			switch (ch)
+			{
+			case '^':
+				val = pow(b, a);
+				break;
+			case '*':
+				val = b * a;
+				break;
+			case '/':
+				val = b / a;
+				break;
+			case '+':
+				val = b + a;
+				break;
+			case '-':
+				val = b - a;
+				break;
 			}
 			push(val);
 		}
 	}
-	cout<<"Result = "<<val;
+	cout << "Result = " << val;
 }
 
 //================= isval Function =================
-bool isval(char postfix[]){
-	int dig = 0, opp=0;
-	for(int i =0; i<=strlen(postfix); i++){
-		if(isdigit(postfix[i]))
+bool isval(char postfix[])
+{
+	int dig = 0, opp = 0;
+	for (int i = 0; i <= strlen(postfix); i++)
+	{
+		if (isdigit(postfix[i]))
 			dig++;
-		else if(postfix[i] == '^' || postfix[i] == '*' || postfix[i] == '/' || postfix[i] == '+' || postfix[i] == '-')
+		else if (postfix[i] == '^' || postfix[i] == '*' || postfix[i] == '/' || postfix[i] == '+' || postfix[i] == '-')
 			opp++;
-	
 	}
-	
-	if(dig==opp+1)
+
+	if (dig == opp + 1)
 		return true;
 	else
 		return false;
 }
 //================= Main Function =================
-int main(){
+int main()
+{
 	char postfix[size];
-	cout<<"Enter Postfix exp : ";
+	cout << "Enter Postfix exp : ";
 	cin >> postfix;
-	if(isval(postfix)){
+	if (isval(postfix))
+	{
 		evalpost(postfix);
 	}
 	else
-		cout<<"Invalid";
+		cout << "Invalid";
 	return 0;
 }
 
 //===================================================
-
